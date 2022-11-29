@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Test1">
-  	<parameter name="os" value="windows"/>  
-  	<parameter name="osVersion" value="8"/>
-	<parameter name="browser" value="chrome"/> 
-	<parameter name="browserVersion" value="latest"/> 
+  <test thread-count="5" name="Test">
     <classes>
-      <class name="day5.SeleniumGridDemo3"/>
+      <class name="jenkins.SmokeTest"/>
     </classes>
-  </test>
-  
-  <test name="Test2">
-  	<parameter name="os" value="windows"/>  
-	<parameter name="browser" value="chrome"/> 
-	<parameter name="osVersion" value="10"/>  
-	<parameter name="browserVersion" value="latest"/> 
-    <classes>
-      <class name="day5.SeleniumGridDemo3"/>
-    </classes>
-  </test>
-</suite> 
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
